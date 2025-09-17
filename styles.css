@@ -1,31 +1,39 @@
-/*  your css code here. If applicable */
 :root {
-	background-color: rgb(135, 206, 235) ;
+  background-color: rgb(135, 206, 235);
 }
+
 p:first-child {
-	background-color: black ; 
-	color: white;
+  background-color: black;
+  color: white;
 }
+
 p:nth-child(2) {
+  /* standard text color — no style needed */
 }
+
 p:last-child {
-	color: red ;
+  color: red;
 }
+
 .ul-li {
-	background-color: grey ;
-	width: 50% ;
-	padding-top: 10px ;
-}
-.fontsize {
-	font-size: 22px ;
-}
-li:nth-child(odd) {
-  background-color: white; 
+  background-color: gray;
   width: 50%;
+  padding-top: 10px;
 }
+
+.fontsize {
+  font-size: 22px;
+}
+
+li:nth-child(odd) {
+  background-color: white;
+}
+
 li:nth-last-child(3) {
-  background-color: pink ;
+  background-color: pink;
 }
+
+/* Add this to satisfy "first and last items: 22px" */
 li:first-child,
 li:last-child {
   font-size: 22px;
