@@ -11,19 +11,17 @@ p:last-child {
   color: red;
 }
 
-/* No need for p:nth-child(2) — just leave it default */
-
 li {
   background-color: gray;
   width: 50%;
-  padding-top: 10px;
+  padding: 10px; /* NOT padding-top */
 }
 
 li:nth-child(odd) {
   background-color: white;
 }
 
-li:nth-last-child(3) { /* 3rd from end = 3rd item in 5-item list */
+li:nth-last-child(3) {
   background-color: pink;
 }
 
