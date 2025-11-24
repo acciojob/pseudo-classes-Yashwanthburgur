@@ -1,48 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
-<body>
-	<div>
-		<p>First paragraph</p>
-		<p>Second paragraph</p>
-		<p>Third one</p>
-		<p>Fourth one</p>
-	</div>
-	<ul>
-		<li>First item</li>
-		<li>Second item</li>
-		<li>Third item</li>
-		<li>Fourth item</li>
-		<li>Fifth item</li>
-	</ul>
-    <script type="text/javascript" src="./script.js"></script>
-</body>
-</html>
+body {
+  background-color: rgb(135, 206, 235);
+}
+
+p:first-child {
+  background-color: black;
+  color: white;
+}
+
 p:last-child {
   color: red;
 }
 
-.ul-li {
+/* No need for p:nth-child(2) — just leave it default */
+
+li {
   background-color: gray;
   width: 50%;
   padding-top: 10px;
-}
-
-.fontsize {
-  font-size: 22px;
 }
 
 li:nth-child(odd) {
   background-color: white;
 }
 
-li:nth-last-child(3) {
+li:nth-last-child(3) { /* 3rd from end = 3rd item in 5-item list */
   background-color: pink;
 }
 
-/* Add this to satisfy "first and last items: 22px" */
 li:first-child,
 li:last-child {
   font-size: 22px;
