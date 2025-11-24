@@ -1,16 +1,25 @@
-:root {
-  background-color: rgb(135, 206, 235);
-}
-
-p:first-child {
-  background-color: black;
-  color: white;
-}
-
-p:nth-child(2) {
-  /* standard text color — no style needed */
-}
-
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div>
+		<p>First paragraph</p>
+		<p>Second paragraph</p>
+		<p>Third one</p>
+		<p>Fourth one</p>
+	</div>
+	<ul>
+		<li>First item</li>
+		<li>Second item</li>
+		<li>Third item</li>
+		<li>Fourth item</li>
+		<li>Fifth item</li>
+	</ul>
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
 p:last-child {
   color: red;
 }
